@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行星与飞船</title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+    <div id="universe">
+        <div id="star"></div>
+        <div id="road1"></div>
+        <div id="road2"></div>
+        <div id="road3"></div>
+        <div id="road4"></div>
+    </div>
+    <div id="command">
+        <h2>指挥中心</h2>
+        <div id="typeSelect">
+            动力系统选择：<br/>
+            <input type="radio" name="power" value="前进号（速率30px/s，能耗5%/s）">前进号（速率30px/s，能耗5%/s）<br/>
+            <input type="radio" name="power" value="奔腾号（速率50px/s，能耗7%/s）">奔腾号（速率50px/s，能耗7%/s）<br/>
+            <input type="radio" name="power" value="超越号（速率80px/s，能耗9%/s）">超越号（速率80px/s，能耗9%/s）<br/><br/>
+            能源系统选择：<br/>
+            <input type="radio" name="energy" value="劲量型（补充能源速率2%/s）">劲量型（补充能源速率2%/s）<br/>
+            <input type="radio" name="energy" value="光能型（补充能源速率3%/s）">光能型（补充能源速率3%/s）<br/>
+            <input type="radio" name="energy" value="永久型（补充能源速率4%/s）">永久型（补充能源速率4%/s）<br/>
+        </div>
+        <div id="control1">
+            对1号飞船下达指令：<button>创建飞船</button><button>开始飞行</button><button>停止飞行</button><button>销毁</button>
+        </div>
+        <div id="control2">
+            对2号飞船下达指令：<button>创建飞船</button><button>开始飞行</button><button>停止飞行</button><button>销毁</button>
+        </div>
+        <div id="control3">
+            对3号飞船下达指令：<button>创建飞船</button><button>开始飞行</button><button>停止飞行</button><button>销毁</button>
+        </div>
+        <div id="control4">
+            对4号飞船下达指令：<button>创建飞船</button><button>开始飞行</button><button>停止飞行</button><button>销毁</button>
+        </div>
+        <div id="console">
+            <h2>监视屏幕</h2>
+            <textarea cols="30" rows="10" ></textarea>
+        </div>
+    </div>
+    <script src="scripts/commandCenter.js"></script>
+    <script src="scripts/adapter.js"></script>
+    <script src="scripts/airShip.js"></script>
+    <script src="scripts/Mediator.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
